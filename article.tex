@@ -130,7 +130,43 @@ This DW project life cycle is based on four basic principles:
 	
 \end{itemize}
 
+\subsection{Data Lake}
+
+Existing reviews on data lake architectures commonly distinguish pond and zone Architectures.
+
+\subsection{Pond Architecture}
+
+Inmon designs a data lake as a set of data ponds\cite{Inmon}. A data pond can be viewed as a subdivision of a data lake
+dealing with data of a specific type. According to Dixon’s specifications, each data pond is associated with a
+specialized storage system, some specific data processing and conditioning (i.e., data transformation/preparation)
+and a relevant analysis service.
+
+\begin{center}
+	\includegraphics[width=7cm]{./images/pondDL}
+\end{center}
+
+\subsection{Zone Architecture}
+
+zone architectures assign data to a zone according to their degree of refinement\cite{Giebler}. For instance, Zaloni’s data
+lake\cite{LaPlante} adopts a six-zone architecture.
+
+\begin{center}
+	\includegraphics[width=7cm]{./images/zoneDL}
+\end{center}
+
+\begin{itemize}	
 	
+	\item The transient loading zone deals with data under ingestion. Here, basic data quality checks are performed.
+	\item The raw data zone handles data in near raw format coming from the transient zone.
+	\item The trusted zone is where data are transferred once standardized and cleansed.
+	\item From the trusted area, data move into the discovery sandbox where they can be accessed by data
+	scientists through data wrangling or data discovery operations.
+	\item On top of the discovery sandbox, the consumption zone allows business users to run “what if” scenarios
+	through dashboard tools.
+	\item The governance zone finally allows to manage, monitor and govern metadata, data quality, a
+	data catalog and security.
+	
+\end{itemize}
 %----------------------------------------------------------------------------------------
 %	Conclusions
 %----------------------------------------------------------------------------------------
