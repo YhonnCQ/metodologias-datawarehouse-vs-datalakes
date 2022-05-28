@@ -54,11 +54,15 @@
 
 \pretitle{\begin{center}\Huge\bfseries} 
 \posttitle{\end{center}} 
-\title{Lorem Ipsum} 
+\title{Comparison of Datawarehouse elaboration methodologies vs. Datalake elaboration methodologies} 
 \author{
-	LastName1, FirstName1\\
+	Valdivia Guzman, Alejandra Maria\\
 	\and
-	LastName2, FirstName2\\
+	Pazos Alarcón, Christian Joshua\\
+	\and
+	Farfan Colque, Mathius Omar\\
+	\and
+	Condori Quispe, Yhónn Joel\\
 }
 \date{\today} 
 \renewcommand{\maketitlehookd}{
@@ -88,7 +92,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus 
 \section{Introduction}
 
 \lettrine[nindent=0em,lines=3]{L}orem ipsum dolor sit amet, consectetur adipiscing elit.
-Morbi vulputate tempus molestie\cite{texbook}.
+Morbi vulputate tempus molestie.
 
 %----------------------------------------------------------------------------------------
 %	State of Art
@@ -96,13 +100,36 @@ Morbi vulputate tempus molestie\cite{texbook}.
 
 \section{State of Art}
 
-\subsection{Lorem ipsum dolor sit amet}
+\subsection{Datawarehouse}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie\cite{latex:companion}.
+Kimball's methodology, called Dimensional Modeling, is based on what is called the Business Dimensional
+Lifecycle. This methodology is considered one of the favorite techniques when building a Data Warehouse\cite{mdawa}.
 
-\begin{center}
-	\includegraphics[width=7cm]{./images/latex-logo} 
-\end{center}
+In the Dimensional Model, models of tables and relationships are constituted with the purpose of optimizing
+decision making, based on queries made in a relational database that are linked to the measurement or a
+set of measurements of the results of the business processes\cite{mdawa}.
+
+\subsection{Features}
+
+This DW project life cycle is based on four basic principles:
+
+\begin{itemize}	
+	
+	\item Focus on the business: Concentrate on identifying business requirements and their associated
+	value, and use these efforts to develop strong relationships with the business, sharpening the business
+	analysis and consultative competence of the implementers\cite{mdawa}.
+	\item Build an adequate information infrastructure: Design a single, integrated, easy-to-use, high-performance
+	information base that will reflect the wide range of business requirements identified in the company\cite{mdawa}.
+	\item Deliver in significant increments: create the data warehouse (DW) in deliverable increments in
+	6 to 12 month timeframes. Use the business value of each identified element to determine the order of
+	application of the increments. In this the methodology resembles agile software construction methodologies\cite{mdawa}.
+	\item Deliver the complete solution: provide all the elements necessary to deliver value to business users.
+	To begin with, this means having a robust, well-designed, quality-tested, and accessible data warehouse.
+	You must also provide ad hoc query tools, advanced reporting and analysis applications, training, support
+	training, support, support, website and documentation\cite{mdawa}.
+	
+\end{itemize}
+
 	
 %----------------------------------------------------------------------------------------
 %	Conclusions
