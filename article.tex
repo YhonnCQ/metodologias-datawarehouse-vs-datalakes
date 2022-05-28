@@ -69,12 +69,19 @@
 \selectlanguage{spanish} 
 \begin{abstract}
 \noindent 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie. 
+Los lagos de datos y los almacenes de datos son dos formas estándar en que las empresas almacenan y
+administran sus datos. La industria y las necesidades de una empresa influyen en qué opción de almacenamiento
+funciona mejor. Comprender sus características únicas puede ayudar a las empresas a tomar decisiones informadas
+sobre la gestión de datos. En este artículo, examinamos los lagos de datos frente a los almacenes de datos, destacamos
+cinco diferencias y discutimos cuándo usar ambas opciones de almacenamiento.
 \end{abstract}
 \selectlanguage{english} 
 \begin{abstract}
 \noindent 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie. 
+Data lakes and data warehouses are two standard ways that companies store and manage their data. A company's industry
+and needs influence which storage option works best. Understanding their unique features can help businesses make informed
+decisions about data management. In this article, we examine data lakes vs. data warehouses, highlight five differences and
+discuss when to use both storage options.
 \end{abstract}
 }
 
@@ -91,8 +98,16 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus 
 
 \section{Introduction}
 
-\lettrine[nindent=0em,lines=3]{L}orem ipsum dolor sit amet, consectetur adipiscing elit.
-Morbi vulputate tempus molestie.
+\lettrine[nindent=0em,lines=3]{D}ata lakes and data warehouses are both widely used for storing big data, but they are not
+interchangeable terms. A data lake is a vast pool of raw data, the purpose for which is not yet defined. A data warehouse is
+a repository for structured, filtered data that has already been processed for a specific purpose. There is even an emerging
+data management architecture trend of the data lakehouse, which combines the flexibility of a data lake with the data
+management capabilities of a data warehouse.
+The two types of data storage are often confused, but are much more different than they are alike. In fact, the only real
+similarity between them is their high-level purpose of storing data.
+The distinction is important because they serve different purposes and require different sets of eyes to be properly
+optimized. While a data lake works for one company, a data warehouse will be a better fit for another.
+
 
 %----------------------------------------------------------------------------------------
 %	State of Art
@@ -167,17 +182,30 @@ lake\cite{LaPlante} adopts a six-zone architecture.
 	data catalog and security.
 	
 \end{itemize}
+
+\subsection{Comparative}
+
+\begin{center}
+	\includegraphics[width=7cm]{./images/comparative}
+\end{center}
+
+In Data Warehouse methodologies, data is organized, defined and metadata is applied to it before it is written and stored.
+This process is known as "schema writing".
+Whereas Data Lake consumes everything, including data types that are considered inappropriate for DW. Data is stored
+in unprocessed form; information is stored in the schema as the data is extracted from the data source, not as it is written
+to storage. This process is known as "schema read".
+
 %----------------------------------------------------------------------------------------
 %	Conclusions
 %----------------------------------------------------------------------------------------
 
 \section{Conclusions}
-\begin{itemize}	
-	
-	\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie.
-	\item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate tempus molestie.
-
-\end{itemize}
+When choosing a methodology to develop a data warehouse, do not use methodologies that require extensive requirements
+gathering and analysis phases, monolithic development phases that take too much time and very long deployment phases.
+The objective of each developer should be to deliver a first implementation that satisfies a part of the needs, to demonstrate
+the advantages of the data warehouse and to motivate the users, that is why you should choose a methodology that
+meets these requirements, because the work should always be aimed at improving the quality and acceptance of the
+same by the users who benefit.
 
 %----------------------------------------------------------------------------------------
 %	References
